@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto Slab Thin', arial;
+  line-height: 1.6;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+.m-1 { margin: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 1.5rem; }
+.mt-2 { margin-top: 1.5rem;}
+
+.top-nav .container,
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav {
+  border-bottom: 1px solid #70707059;
+  padding: .5rem ;
+  display: none;
+}
+.hours {
+  display: flex;
+  align-items: center;
+  color: var(--grey);
+  font-size: .8rem;
+}
+.hours i {
+  margin-right: .5rem;
+  color: var(--primary-color);
+}
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.social-icons i {
+  cursor: pointer;
+  list-style:  none;
+  color: var(--primary-color); 
+}
+.social-icons i:hover {
+  color: var(--secondary-color);
+}
+.navbar {
+  padding: .3rem .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logotype {
+  height: 4rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-toggler {
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--darkgrey);
+}
+.navbar-nav li {
+  margin-right: 1.5rem;
+  list-style: none;
+}
+.navigation {
+  display: none;
+}
+.placeholder {
+  height: 380px;
+}
+.section-1 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-top {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+.bg-color {
+  background-color: #DEDEDE;
+  width: 100%;
+  padding-top: .5rem;
+}
+
+.section-top h1 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  color: var(--darkgrey);
+}
+.section-top p {
+  font-size: .9rem;
+  color: var(--grey);
+}
+
+.btn {
+  outline: none;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40%;
+  display: inline-block;
+}
+ .btn-primary {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+.btn-primary:hover{
+  background-color: var(--primary-color);
+} 
+
+.section-2 .container {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: fle;
+  
+}
+
+.numbers h3 {
+  color: var(--primary-color);
+}
+span {
+  color: var(--primary-color);
+}
+hr {
+  width: 40%;
+  margin-left: 0;
+  margin-right: auto;
+  background-color: var(--secondary-color);
+  height: 3px;
+  outline: none;
+  border: 0 none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 360;
+  }
+
+} 
+@media (min-width: 550px){
+.container {
+  max-width: 540px;
+}
+.top-nav {
+  display: block;
+}
+.logotype {
+  height: 5rem;
+}
+.section-1 {
+
+}
+
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+  .top-nav {
+    display: block;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .logotype {
+    height: 5rem;
+  }
+ .navigation {
+   display: block;
+ }
+
+  .placehold {
+    display: block;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+
+
+
+
+
+/* .section-1 {
+  background-image: url('/DentialClinic/img/placeholder.dam.svg');
+  background-repeat: no-repeat;
+  background-size: 19rem;
+  background-position: center;
+  /* background-blend-mode: overlay; */

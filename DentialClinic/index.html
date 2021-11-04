@@ -5,95 +5,102 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name= "viewport" content="width=device-width, initial-scale=1.0">
   <title>Dential Clinic</title>
-  <!-- CSS only -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/DentialClinic/css/styles.css">
+  <link rel="stylesheet" href="/DentialClinic/css/colors.css">
   <link href="https://allfont.net/allfont.css?fonts=roboto-slab-thin" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
 
 
-  <nav class="top-nav bg-nav">
+  <nav class="top-nav">
     <div class="container">
       <div class="hours">
-        <a href=""><i class="far fa-clock"></i></a>
+        <i class="far fa-clock"></i>
         <p>Working hours: Monday - Friday: 09:00 - 18:00</p>
       </div>
-
-      <div class="social-icons">
+      <ul class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-google-plus-g"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
+      </ul>
     </div>
   </nav>
 
-  <div class="navbar">
-    <div class="container">
-      <a href="#" class="logotype"><img src="/DentialClinic/img/logotypdential.svg" alt="logotype"></a>
-      <!-- <button class="navbar-toggler">
+  <div class="navbar m-1">
+    <div class="container m-1">
+      <div>
+      <a href="#"><img src="/DentialClinic/img/logotypdential.svg" alt="logotype" class="logotype"></a>
+      </div>
+      
+      <button class="navbar-toggler">
         <i class="fas fa-bars"></i>
-      </button> -->
-    
+      </button>
 
-    <div class="navigation">
-      <ul class="navbar-nav">
-        <li class="nav-link"><a href="#">Home</a></li>
-        <li class="nav-link"><a href="#">About Us</a></li>
-        <li class="nav-link"><a href="#">Services</a></li>
-        <li class="nav-link"><a href="#">Contact</a></li>
-      </ul>
+      <div class="navigation">
+        <ul class="navbar-nav">
+          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#">About Us</a></li>
+          <li class="nav-link"><a href="#">Services</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
   </div>
 
 
   
-  <section class="showcase bg-color">
+  <section class="section-1 bg-color" id="bg-image">
     <div class="container">
-      <div>
-        <a class="placeholder" href="#"><img src="/DentialClinic/img/placeholder.dam.svg" alt="lady" class="placeholder"></a>
-      </div>
-      <div class="modern">
-        <h1>Modern technologies ensure safety</h1>
-        <h6>Our clinic is equipped with the highest quality medical and dental equipment,
-          which allows for quick and effective treatment of the patient
-        </h6>
-        <button class="btn btn-primary">About our clinic</button>
+      <img src="/DentialClinic/img/placeholder.dam.svg" alt="lady" class="placeholder">
+        
+      <div class="section-top">
+        <h1 class="mb-2">Modern technologies ensure safety</h1>
+        <p class="mb-2">Our clinic is equipped with the highest quality medical and dental equipment, which allows for quick and effective treatment of the patient.</p>
+          <button class="btn btn-primary">About our clinic</button>
       </div>
     </div>
-</section>
-    <section class="aboutus">
-      <div>
-        <h3>DentialClinic is a modern medical and dental clinic</h3>
-      </div>
-      <div>
-        <p class="first">The DentialClinic center located in the city of Stockholm is one of the most modern dentistry centers in Sweden. It was created for demanding patients who expect the highest quality of services combined with comfort and a pleasant atmosphere. </p>
-        <p>The highest-class dental equipment possessed by the DentialClinic Center enables complicated procedures to be carried out. In our dental practice we combine passion, technology and quality. We strive to fulfill your dreams of a wonderful smile.</p>
-      </div>
-      <div class="patient-9850">
-        <h3>9850</h3>
-        <p>Happy patient</p>
-      </div>
-      <div class="performed">
-        <h3>12890</h3>
-        <p>Happy patient</p>
-      </div>
-      <div class="openclnic">
-        <h3>24/7</h3>
-        <p>Happy patient</p>
-      </div>
+  </section>
+
+    <section class="section-2">
+      <div class="container">
+        
+        <h3>Dential<span>Clinic</span> is a modern medical and dental clinic</h3>
+        <hr>
+        <div>
+            <p class="mb-1">The DentialClinic center located in the city of Stockholm is one of the most modern dentistry centers in Sweden. It was created for demanding patients who expect the highest quality of services combined with comfort and a pleasant atmosphere.</p>
+            <p>The highest-class dental equipment possessed by the DentialClinic Center enables complicated procedures to be carried out. In our dental practice we combine passion, technology and quality. We strive to fulfill your dreams of a wonderful smile.</p>
+          </div>
+        <div class="about">
+          <div class="numbers">
+            <div>
+              <h3>9850</h3>
+              <p>Happy patients</p>
+            </div>
+            <div>
+              <h3>12890</h3>
+              <p>Performed treatments</p>
+            </div>
+            <div>
+              <h3>24/7</h3>
+              <p>Open clinic</p>
+            </div>
+          </div>
+          
+          
+          <div>
+            <a href="#"><img src="/DentialClinic/img/placeholder.gubbe.svg" alt="man" class="placeholder"></a>
+          </div>
+        </div>
       
-      <div class="placeholder">
-        <a href="#"><img src="/DentialClinic/img/placeholder.gubbe.svg" alt="man"  width="200px" height="250px"></a>
-      </div>
+    </div>
     </section>
     
-      <section class="services">
+      <section class="section-3">
         <h4>Our services</h4>
-
         <div class="service-choice">
           <div class="circle">
             <a href=""><img src="/DentialClinic/img/toothinspection.svg" alt="tooth inspection"></a>
@@ -144,6 +151,14 @@
           </div>
         </div>
       </section> 
+
+      <div class="card">
+        <a href="#">
+          <div class="circle">
+            <img src="/DentialClinic/img/toothinspection.svg" alt="tooth inspection">
+          </div>
+        </a>
+      </div>
 
 
       <div id="appointment">
