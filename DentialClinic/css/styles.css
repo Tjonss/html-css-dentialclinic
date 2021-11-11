@@ -106,22 +106,19 @@ body, html {
 /* START SECTION-1 */
 
 .section-1 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 .placeholder {
   display: none;
 }
-.section-1 .container {
-  text-align: center;
-}
+
 .text h1 {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.2;
   color: var(--darkgrey);
+  padding:;
 }
 .bg-color {
   background-color: #DEDEDE;
@@ -131,7 +128,7 @@ body, html {
 .section-1 .text p {
   font-size: .7rem;
   color: var(--grey);
-  margin: 1rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -143,7 +140,7 @@ body, html {
   cursor: pointer;
   width: auto;
   display: inline-block;
-  font-size: .7rem;
+  font-size: .8rem;
 }
  .btn-primary {
   color: #fff;
@@ -270,27 +267,37 @@ hr {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 475px) {
+  .container {
+    max-width: 460px;
+  }
+}
+
 @media (min-width: 600px){
   .container {
-    
     max-width: 575px;
   }
   .logotype {
-    margin-left: 1rem;
     height: 4rem;
   }
   .navbar-toggler {
     font-size: 1.8rem;
-      margin-right: 2rem;
   }
   .section-1 .text h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .section-1 .text p {
     font-size: .8rem;
   }
+  .section-2 .container h2 {
+    font-size: 1.5rem;
+  }
+  .section-2 .container p {
+    font-size: .8rem;
+  }
   .text .btn {
     padding: 1rem 3rem;
+    font-size: .8rem;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -309,32 +316,35 @@ hr {
     }
     .logotype {
       margin: auto;
-      height: 5rem;
     }
     .navbar {
       position: relative;
     }
     .navbar-nav {
       display: flex;
-      margin-left: 1rem;
     }
     .navbar-nav a {
       font-size: 1rem;
       margin: auto;
     }
+
+    /* SECTION-1 START */
     .placeholder {
       display: block;
       padding-top: 1.5rem;
-      width: 90%;
+      width: 100%;
     }  
     .bg-color {
      padding: 0;
     }
-  
-    .section-1 .container .text {
-      margin-left: 1rem;
-      text-align: center;
+    .section-1 .container {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+    }
+  
+    .section-1 .text {
+      padding-left: 3rem;
     }
     .section-1 .text h1 {
       font-size: 2rem;
@@ -345,30 +355,37 @@ hr {
     .text .btn {
       padding: 1rem 2rem;
       width: 50%;
+      font-size: .8rem;
     }
+    /* SECTION-1 END */
+
+    /*  SECTION-2 START */
     hr {
       width: 100%;
       margin-left: 0;
       margin-right: auto;
     }
+    .section-2 {
+      display: flex;
+    }
     .section-2 .container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
     .content {
       width: 100%;
       text-align: start;
       margin-right: 4rem;
     }
-   
-    .section-2 img {
-      padding-top: 0;
-      width: 100%;
-      margin-left: 1rem;
+    .section-2 .container h2 {
+      font-size: 1.5rem;
+    }
+    .section-2 .container p {
+      font-size: .8rem;
     }
     .numbers {
-      padding: 0;
-      margin: 2rem 0;
+      margin-left: 0;
     }
     .numbers h3 {
       font-size: 1.5rem;
@@ -391,13 +408,15 @@ hr {
     .top-nav {
       display: block;
     }
-    
-    .section-1 .container .text {
-      margin: 0 4rem;
+
+    .section-1 .container {
       text-align: start;
-      align-items: center;
     }
-    .text h1 {
+    .section-1 .text {
+      padding-left: 5rem;
+    }
+  
+    .section-1 .text h1 {
       font-size: 2.5rem;
     }
     .text .btn {
@@ -428,15 +447,26 @@ hr {
     .container {
       max-width: 1140px;
     }
-    .section-1 .container .text {
-      padding-left: 2rem;
-      margin-right: 10rem;
+    .section-1 .container h1 {
+      font-size: 3rem;
     }
-    .section-1 .container img {
-      width: 100%;
+    .section-1 .container p {
+      font-size: .9rem;
+    }
+    .section-2 .container h2 {
+      font-size: 1.8rem;
+    }
+    .section-2 .container p {
+      font-size: .9rem;
+    }
+    .placeholder {
+      width: 500px;
     }
     .section-2 img {
-      width: 100%;
+      width: 400px;
+    }
+    .section-1 .container .text {
+      padding-left: 6rem;
     }
     .numbers {
       margin-right: 7rem;
