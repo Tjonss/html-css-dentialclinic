@@ -59,7 +59,7 @@ body, html {
 
 /* NAVBAR START */
 .logotype {
-  height: 3rem;
+  height: 3.5rem;
 }
 
 .navbar {
@@ -68,6 +68,7 @@ body, html {
   justify-content: center;
   position: sticky;
   background-color: #fff;
+  box-shadow: 2px 3px 3px rgb(194, 193, 193);
   top: 0;
   z-index: 999;
 }
@@ -112,25 +113,21 @@ body, html {
 .placeholder {
   display: none;
 }
-
-.text h1 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: var(--darkgrey);
-  padding:;
-}
 .bg-color {
   background-color: #DEDEDE;
   padding: 2.5rem;
 }
-
+.section-1 .text h1 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--darkgrey);
+}
 .section-1 .text p {
-  font-size: .7rem;
+  font-size: .8rem;
   color: var(--grey);
   margin-top: 1rem;
 }
-
 .btn {
   outline: none;
   border: 1px solid transparent;
@@ -141,8 +138,9 @@ body, html {
   width: auto;
   display: inline-block;
   font-size: .8rem;
-}
- .btn-primary {
+  }
+
+.btn-primary {
   color: #fff;
   background-color: var(--secondary-color);
 }
@@ -164,12 +162,12 @@ body, html {
 }
  .section-2 .text {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.3;
   color: var(--darkgrey);
 } 
 .section-2 .container p {
-  font-size: .7rem;
+  font-size: .8rem;
   color: var(--grey);
 }
 .numbers {
@@ -181,9 +179,6 @@ body, html {
   font-weight: 500;
   font-size: 1.3rem;
   color: var(--primary-color);
-}
-.section-2 .numbers p {
-  font-size: .7rem;
 }
 
 /* SECTION-2 END */
@@ -206,7 +201,7 @@ hr {
 }
 
 .section-3 {
-  padding-top: 2rem;
+  padding: 5rem;
   background-color: #F7F7F7;
 }
 .section-3 h2 {
@@ -215,7 +210,7 @@ hr {
   font-weight: normal;
 }
 .services hr {
-  width: 300px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
@@ -223,19 +218,26 @@ hr {
 
 .service-cards {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
 }
 .card {
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
   background-color: white;
-  box-shadow: 3px 3px 10px 0 #33333334;
   display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly; */
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+}
+.card:hover .circle {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 3px 10px #D4EEFB;
+}
+.card:hover {
+  box-shadow: 3px 3px 10px 5px #33333334;
+  transition-delay: .3s;
 }
 
 .circle {
@@ -246,10 +248,6 @@ hr {
   position: relative;
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-.circle:hover {
-  background-color: var(--primary-color);
-  box-shadow: 0px 0px 3px 10px #D4EEFB;
 }
 .image {
   position: absolute;
@@ -267,56 +265,98 @@ hr {
   margin-bottom: 1rem;
 }
 .card-body p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
   font-size: .8rem;
+  padding-bottom: 3rem;
   color: var(--grey);
 }
 
 
+.appointment {
+  background-color: #2BAAEC;
+  color: #fff;
+}
+.appointment .container {
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
+}
+.booking h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: var(--primary-color);
+  font-size: .9rem;
+  padding: 1rem 2rem;
+}
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 1px solid #fff;
+  transition: ease-in-out .2s;
+}
+#big {
+  display: none;
+}
 
+footer {
+  background-color: #2BAAEC;
+  padding: 1rem;
+  color: white;
+}
+footer .container {
+ text-align: center;
+}
+.hours-phone p {
+  font-size: .8rem;
+  margin-bottom: 1.3rem;
+}
+.hours-phone i {
+  font-size: 1.2rem;
+}
 
+.social-icons-phone i {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.social-icons-phone i:hover {
+  color: var(--secondary-color);
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copyright p {
+  margin-left: .4rem;
+  font-weight: normal;
+  font-size: .6rem;
+  letter-spacing: ;
+}
+#copyright i {
+  font-size: .6rem;
+}
+/* GÖR OM MEDIA QUERIES */
 
 
 
 
 /* MEDIA QUERIES */
 
-@media (min-width: 475px) {
-  .container {
-    max-width: 460px;
-  }
-}
+
 
 @media (min-width: 600px){
   .container {
     max-width: 575px;
   }
-  .logotype {
-    height: 4rem;
-  }
-  .navbar-toggler {
-    font-size: 1.8rem;
-  }
-  .section-1 .text h1 {
-    font-size: 1.8rem;
-  }
-  .section-1 .text p {
-    font-size: .8rem;
-  }
-  .section-2 .container h2 {
-    font-size: 1.5rem;
-  }
-  .section-2 .container p {
-    font-size: .8rem;
-  }
-  .text .btn {
-    padding: 1rem 3rem;
-    font-size: .8rem;
-  }
-  .service-cards {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-  }
-
   }
 
 
@@ -330,9 +370,11 @@ hr {
     }
     .logotype {
       margin: auto;
+      height: 4rem;
     }
     .navbar {
       position: relative;
+      box-shadow: none
     }
     .navbar-nav {
       display: flex;
@@ -370,6 +412,23 @@ hr {
       width: 50%;
       font-size: .8rem;
     }
+ 
+    #big {
+      display: block;
+    }
+    .booking h4 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .booking {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .booking .btn {
+      padding: 1rem 1.5rem;
+      font-size: .8rem;
+    }
     /* SECTION-1 END */
 
 
@@ -405,8 +464,8 @@ hr {
     .numbers h3 {
       font-size: 1.5rem;
     }
-    .cards {
-      grid-template-columns: repeat(3, 1fr);
+    #phone {
+      display: none;
     }
   }
 
@@ -456,6 +515,13 @@ hr {
       padding-top: 0;
       width: 70%;
     }
+    .booking h4 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .booking .btn {
+      font-size: .9rem;
+    }
   }
 
   @media (min-width: 1200px) {
@@ -486,9 +552,10 @@ hr {
     .numbers {
       margin-right: 7rem;
     }
+
   }
   
-
+ 
 
 
 
