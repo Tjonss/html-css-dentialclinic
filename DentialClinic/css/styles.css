@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body, html {
   font-family: 'Roboto Slab Thin', arial;
   line-height: 1.6;
@@ -21,7 +20,9 @@ body, html {
 .mt-2 { margin-top: 2rem; }
 .blue { color: var(--primary-color); }
 
+
 /* TOP-NAV START */
+
 .top-nav {
   border-bottom: 1px solid #70707059;
   padding: .6rem;
@@ -72,28 +73,23 @@ body, html {
   top: 0;
   z-index: 999;
 }
-
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar-nav {
   display: none;
   align-items: center;
 }
-
 .navbar a {
   text-decoration: none;
   color: var(--darkgrey);
 }
-
 .navbar-nav li {
   margin-left: 2rem;
   list-style: none;
 }
-
 .navbar-toggler {
   outline: none;
   border: none;
@@ -102,6 +98,7 @@ body, html {
   font-size: 1.5rem;
 }
 
+/* NAVBAR END */
 
 
 /* START SECTION-1 */
@@ -109,11 +106,7 @@ body, html {
 .section-1 .container {
   text-align: center;
 }
-
 .placeholder-woman {
-  display: none;
-}
-.placeholder-man {
   display: none;
 }
 .bg-color {
@@ -139,8 +132,7 @@ body, html {
   cursor: pointer;
   display: inline-block;
   font-size: .8rem;
-  }
-
+}
 .btn-primary {
   color: #fff;
   background-color: var(--secondary-color);
@@ -149,14 +141,17 @@ body, html {
   background-color: var(--primary-color);
 } 
 
-/* END SECTION-1 */
+/* SECTION-1 END */
+
 
 /* START SECTION-2 */
 
 .span-d-block {
   display: block;
 }
-
+.placeholder-man {
+  display: none;
+}
 .section-2 .container {
   padding-top: 2rem;
   text-align: center;
@@ -185,11 +180,8 @@ body, html {
 /* SECTION-2 END */
 
 
+/* START SECTION-3 */
 
-
-
-
-/* SECTION-3 START */
 hr {
   margin: 1rem;
   width: 70%;
@@ -200,7 +192,6 @@ hr {
   outline: none;
   border: 0 none;
 }
-
 .section-3 {
   padding: 3rem;
   background-color: #F7F7F7;
@@ -216,7 +207,6 @@ hr {
   margin-right: auto;
   margin-bottom: 2rem;
 }
-
 .service-cards {
   display: grid;
   gap: 1.5rem;
@@ -230,7 +220,6 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .card:hover .circle {
   background-color: var(--primary-color);
@@ -243,7 +232,6 @@ hr {
   transition-delay: .6s;
   cursor: pointer;
 }
-
 .circle {
   background-color: var(--secondary-color);
   height: 100px;
@@ -318,7 +306,6 @@ footer .container {
 .hours-phone i {
   font-size: 1.2rem;
 }
-
 .social-icons-phone i {
   padding: 1.2rem;
   margin-bottom: 1rem;
@@ -347,154 +334,151 @@ footer .container {
 
 
 
-
-
 /* MEDIA QUERIES */
-
 
 
 @media (min-width: 600px){
   .container {
     max-width: 575px;
   }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 740px;
   }
-
-
-  @media (min-width: 768px) {
-    .container {
-      width: 100%;
-      max-width: 740px;
-    }
-    .navbar-toggler {
-      display: none;
-    }
-    .logotype {
-      height: 4rem;
-    }
-    .navbar {
-      position: relative;
-    }
-    .navbar-nav {
-      display: flex;
-    }
+  .navbar-toggler {
+    display: none;
+  }
+  .logotype {
+    height: 4rem;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar-nav {
+    display: flex;
+  }
    
-    /* SECTION-1 START */
-    .placeholder-woman {
-      display: block;
-      padding-top: 1.5rem;
-      width: 100%;
-    }
-    .bg-color {
-     padding: 0;
-    }
-    .section-1 .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .section-1 .text {
-      padding-left: 3rem;
-    }
-    .section-1 .text h1 {
-      font-size: 2rem;
-    }
-    .text .btn {
-      padding: 1rem 2rem;
-      width: 50%;
-    } 
+  /* SECTION-1 START */
+  .placeholder-woman {
+    display: block;
+    padding-top: 1.5rem;
+    width: 100%;
+  }
+  .bg-color {
+    padding: 0;
+  }
+  .section-1 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-1 .text {
+    padding-left: 3rem;
+  }
+  .section-1 .text h1 {
+    font-size: 2rem;
+  }
+  .text .btn {
+    padding: 1rem 2rem;
+    width: 50%;
+  } 
 
-    /* SECTION-1 END */
+  /* SECTION-1 END */
 
-    /* SECTION-2 START */
-    .placeholder-man {
-      display: block;
-      width: 100%;
-    }
-    .section-2 .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .content {
-      width: 100%;
-      margin-right: 4rem;
-    }
-    .section-2 .text {
-      font-size: 1.4rem;
-    }
-    hr {
-      width: 100%;
-      margin-left: 0;
-      margin-right: auto;
-    }
-
-    /* SECTION-2 END */
-
-    .section-3 {
-      padding-bottom: 6rem;
-    } 
-    
-    .booking h4 {
-      margin: auto;
-      font-size: 1.3rem;
-      padding-bottom: 2rem;
-    }
-    #footer-big {
-      display: block;
-    }
-    #phone {
-      display: none;
-    }
+  /* SECTION-2 START */
+  .placeholder-man {
+    display: block;
+    width: 100%;
+  }
+  .section-2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .content {
+    width: 100%;
+    margin-right: 4rem;
+  }
+  .section-2 .text {
+    font-size: 1.4rem;
+  }
+  hr {
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1000px;
-    }
-    .top-nav {
-      display: block;
-    }
-    .navbar-nav li {
-      margin-left: 3rem;
-    }
-    .section-1 .container {
-      text-align: left;
-    }
-    .section-1 .text {
-      padding-left: 7rem;
-    }
-    .section-1 .text h1 {
-      font-size: 2.5rem;
-    }
-    .text .btn {
-      width: 35%;
-    }
-    .content {
-      width: 50%;
-      text-align: left;
-    }
-    .numbers {
-      margin-right: 3rem;
-    }
+  /* SECTION-2 END */
+
+  .section-3 {
+    padding-bottom: 6rem;
+  } 
+  .booking h4 {
+    margin: auto;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+  }
+  #footer-big {
+    display: block;
+  }
+  #phone {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+  .top-nav {
+    display: block;
+  }
+  .navbar-nav li {
+    margin-left: 3rem;
+  }
+  .section-1 .container {
+    text-align: left;
+  }
+  .section-1 .text {
+    padding-left: 7rem;
+  }
+  .section-1 .text h1 {
+    font-size: 2.5rem;
+  }
+  .text .btn {
+    width: 35%;
+  }
+  .content {
+    width: 50%;
+    text-align: left;
+  }
+  .numbers {
+    margin-right: 3rem;
+  }
   
-    .placeholder-man {
-      width: 70%;
-      margin-left: 3rem;
-    }
-   .container .booking {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-   }
-   .booking h4 {
-     margin: 0;
-     padding: 0;
-   }
-
-    .booking .btn {
-      padding: 1rem 2.5rem;
-    }
+  .placeholder-man {
+    width: 70%;
+    margin-left: 3rem;
   }
+  .container .booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .booking h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .booking .btn {
+    padding: 1rem 2.5rem;
+  }
+}
 
 
 
