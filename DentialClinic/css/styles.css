@@ -8,7 +8,7 @@ body, html {
   line-height: 1.6;
 }
 .container {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -105,7 +105,7 @@ body, html {
 
 
 /* START SECTION-1 */
-.section-1 .container {
+.section-1 {
   text-align: center;
 }
 .placeholder-woman {
@@ -117,7 +117,7 @@ body, html {
 }
 .section-1 .text h1 {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.2;
   color: var(--darkgrey);
 }
@@ -125,18 +125,6 @@ body, html {
   font-size: .8rem;
   color: var(--grey);
 }
-/* .section-1 .content h1 {
-  font-weight: 500;
-  font-size: 1.8rem;
-  line-height: 1.2;
-  color: var(--darkgrey);
-}
-.section-1 .content p {
-  font-size: .8rem;
-  color: var(--grey);
-} */
-
-
 .btn {
   outline: none;
   border: 1px solid transparent;
@@ -164,7 +152,7 @@ body, html {
 .placeholder-man {
   display: none;
 }
-.section-2 .container {
+.section-2 {
   padding-top: 2rem;
   text-align: center;
 }
@@ -174,15 +162,20 @@ body, html {
   line-height: 1.3;
   color: var(--darkgrey);
 } 
-.section-2 .container p {
+.section-2 p {
   font-size: .8rem;
   color: var(--grey);
 }
+.section-2-paragraph {
+  width: 90%;
+  margin: auto;
+}
 .numbers {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.5rem 0;
+  
 }
 .numbers h3 {
   font-weight: 500;
@@ -195,7 +188,7 @@ body, html {
 /* START SECTION-3 */
 hr {
   margin: 1rem;
-  width: 70%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-color);
@@ -387,9 +380,9 @@ footer {
     color: var(--darkgrey);
   }
   .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     color: #000;
-    transition: 150ms ease-in;
+    font-weight: 600;
   }
    
   /* SECTION-1 START */
@@ -412,12 +405,6 @@ footer {
   .section-1 .text h1 {
     font-size: 2rem;
   }
-  /* .section-1 .content {
-    padding-left: 3rem;
-  }
-  .section-1 .content h1 {
-    font-size: 2rem;
-  } */
   .text .btn {
     padding: 1rem 2rem;
     width: 50%;
@@ -442,6 +429,10 @@ footer {
   }
   .section-2 .text {
     font-size: 1.4rem;
+  }
+  .section-2-paragraph {
+    width: 100%;
+    /* margin: auto; */
   }
   hr {
     width: 100%;
@@ -481,12 +472,6 @@ footer {
   .section-1 .text h1 {
     font-size: 2.5rem;
   }
-  /* .section-1 .content {
-    padding-left: 7rem;
-  }
-  .section-1 .content h1 {
-    font-size: 2.5rem;
-  } */
   .text .btn {
     width: 35%;
   }
@@ -499,6 +484,7 @@ footer {
   }
   .numbers {
     margin-right: 3rem;
+    justify-content: space-between;
   }
   .placeholder-man {
     width: 70%;
