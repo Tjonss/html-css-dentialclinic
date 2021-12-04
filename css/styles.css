@@ -98,8 +98,9 @@ body, html {
   border: none;
   color: var(--primary-color);
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   cursor: pointer;
+  margin-right: 1rem;
 }
 /* NAVBAR END */
 
@@ -372,6 +373,7 @@ footer {
   }
   .navbar {
     position: relative;
+    box-shadow: none;
   }
   .navbar-nav {
     display: flex;
